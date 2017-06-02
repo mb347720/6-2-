@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 600px;
+            background-color: #aaa;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+        }
+        .box {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            width: 770px;
+        }
+
+        .container::before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+        
+/*
+       .basic {
+            width: 30px;
+           background-color: #08b3ff;
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+*/
+
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+<!--       <div class="basic"></div>-->
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore cumque maiores sint quidem animi quae sequi unde! Voluptates nostrum incidunt molestiae fugit repellendus corporis dolorem, ea fuga. Quo, numquam, et.
+        </div>
+    </div>
+</body>
+</html>

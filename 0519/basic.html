@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .full-width {
+            width: 100%;
+            background-color: #989898;
+/*            overflow: auto;*/
+        }
+        .clearfix::after {
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .fixed-width {
+            width: 1170px;
+            margin: auto;
+            background-color: #f86363;
+        }
+        .box {
+            width: 370px;
+            height: 390px;
+            background-color: #07d9ff;
+            float: left;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-width clearfix">
+        <div class="fixed-width clearfix">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+</html>

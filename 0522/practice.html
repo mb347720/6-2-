@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 300px;
+            background-color: #bbb;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+            padding: 15px;
+        }
+        .container::before {
+            content: "";
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .icon {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin: 50px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .content {
+            width: 300px;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon"></div>
+        <div class="content">
+            <h3>TITLE</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt molestiae praesentium aperiam cum maxime illo labore commodi.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

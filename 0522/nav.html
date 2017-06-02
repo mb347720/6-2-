@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        nav {
+            width: 1170px;
+            margin: auto;
+            background-color: #fa0;
+/*            height: 35px;*/
+/*            overflow: auto;*/
+        }
+        nav .logo {
+            float: left;
+            width: 100px;
+            height: 35px;
+            line-height: 35px;
+            background-color: #aaa;
+        }
+        nav .menu {
+            float: right;
+        }
+        nav .menu ul {
+            margin: 0;
+            padding: 0;
+        }
+        nav .menu li {
+            float: left;
+            list-style: none;
+        }
+        nav .menu a {
+            text-decoration: none;
+            color: #000;
+            font-family: tahoma;
+            display: block;
+            height: 35px;
+            line-height: 35px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <nav class="clearfix">
+        <div class="logo">LOGO</div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">about</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
